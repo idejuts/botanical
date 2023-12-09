@@ -185,7 +185,7 @@ li a:hover {
 }
 
 .kontakti {
-  background-color: #ae8a6c;
+  background-color: #92633c;
   font-size: clamp(1.105rem, 2vw, 1.15rem);
   padding-bottom: 20rem;
 }
@@ -194,6 +194,8 @@ li a:hover {
   background-color: #463427;
   font-size: clamp(1.105rem, 2vw, 1.15rem);
   padding-bottom: 20rem;
+  display: grid;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -220,7 +222,7 @@ li a:hover {
   opacity: 1;
 }
 
-html {
+/* html {
   -webkit-transition: all 0.7s;
   -webkit-animation-name: myfading;
   -webkit-animation-duration: 3s;
@@ -236,7 +238,7 @@ html {
     filter: blur(0px);
     opacity: 1;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -400,9 +402,3 @@ img {
   background: #ff6600;
   color: white;
 }
-
-h2 {
-  justify-self: center;
-  padding: 10px;
-}
-

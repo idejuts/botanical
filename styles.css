@@ -1,3 +1,7 @@
+html {
+  font-family: "Constantia";
+}
+
 .grid-container {
   background-color: #754f44;
   margin: 0;
@@ -15,7 +19,9 @@
   background-size: cover;
   background-position: center;
   height: 250px;
-  width: auto;
+  filter: blur(2px);
+  transition: filter 0.25s linear;
+  filter: grayscale(20%);
 }
 .image1 {
   grid-area: image1;
@@ -66,41 +72,6 @@
   background-image: url("Pics/image8.heic");
   background-color: #cccccc;
 }
-.image9 {
-  grid-area: image9;
-  background-image: url("Pics/image9.heic");
-  background-color: #cccccc;
-}
-.image10 {
-  grid-area: image10;
-  background-image: url("Pics/image10.webp");
-  background-color: #cccccc;
-}
-.image11 {
-  grid-area: image11;
-  background-image: url("Pics/image11.jpg");
-  background-color: #cccccc;
-}
-.image12 {
-  grid-area: image12;
-  background-image: url("Pics/image12.webp");
-  background-color: #cccccc;
-}
-.image13 {
-  grid-area: image13;
-  background-image: url("Pics/image13.webp");
-  background-color: #cccccc;
-}
-.image14 {
-  grid-area: image14;
-  background-image: url("Pics/image14.webp");
-  background-color: #cccccc;
-}
-.image15 {
-  grid-area: image15;
-  background-image: url("Pics/image15.webp");
-  background-color: #cccccc;
-}
 
 .logo {
   grid-area: logo;
@@ -108,9 +79,49 @@
   min-width: 200px;
 }
 
+.grid-item:hover {
+  filter: blur(0);
+  filter: grayscale(-5%);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #af864c;
+}
+
+.fakti {
+  
+}
+
+
 @media only screen and (max-width: 600px) {
   .grid-container {
-    background-color: blue;
     gap: 1px;
   }
   .logo {

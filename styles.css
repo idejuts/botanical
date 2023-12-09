@@ -1,4 +1,5 @@
 .grid-container {
+  background-color: #754f44;
   margin: 0;
   padding: 0;
   display: grid;
@@ -104,9 +105,11 @@
 .logo {
   grid-area: logo;
   background-image: url("Pics/logo.png");
-  background-color: #cccccc;
-  width: auto;
-  height: 250px;
-  aspect-ratio: 1;
-  justify-self: center;
+  min-width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    background-color: lightblue;
+  }
 }
